@@ -2,6 +2,7 @@ import React from "react";
 import "./App.css";
 import MealsTable from "./components/MealsTable";
 import Header from './components/Header';
+import MealsForm from "./components/MealsForm";
 
 function App() {
   const data = [
@@ -52,7 +53,7 @@ function App() {
     <div className="App">
       <Header/>
       <br/><br/><br/>
-      <h4>Insert Form here!</h4>
+      <MealsForm/>
       <br/><br/><br/>
       <MealsTable rows={data}/>
     </div>

@@ -3,8 +3,8 @@ import React from "react";
 const MealsTable = ({ rows }) => {
   return (
     <div>
-      <table class="table">
-        <thead class="thead-dark">
+      <table className="table">
+        <thead className="thead-dark">
           <tr>
             <th scope="col">Day</th>
             <th scope="col">Breakfast</th>
@@ -14,7 +14,7 @@ const MealsTable = ({ rows }) => {
         </thead>
         <tbody>
           {rows.map(row => (
-            <tr>
+            <tr key={row.day}>
               <td>{row.day}</td>
               <td>{row.breakfast}</td>
               <td>{row.lunch}</td>
